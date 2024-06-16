@@ -1,0 +1,76 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* 全局字体 */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 高度占满整个视口高度 */
+  background-image: url('background.jpg'); /* 设置背景图 */
+  background-size: cover; /* 让背景图覆盖整个页面 */
+  background-position: center top; /* 背景图位置居中顶部 */
+  background-repeat: no-repeat;
+}
+
+.no {
+  position: absolute; /* 绝对定位 */
+  top: 90px; /* 距离页面顶部的距离 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 使用transform将容器水平居中 */
+  text-align: center; /* 文字居中对齐 */
+}
+
+.no-hd {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px; /* 增加内边距 */
+  background-color: rgba(245, 245, 245, 0.1);/* 设置背景颜色为深灰色，透明度为20% */
+  box-shadow: 7px 7px 17px rgba(0, 0, 0, 0.5);
+  opacity: 0.85;
+  transition: all 0.6s;
+  background-position: center top; /* 背景图位置居中顶部 */
+  background-repeat: no-repeat;
+}
+
+.no-hd li {
+  font-size: 3em; /* 改变数字的字体大小 */
+  color:#f7d7f7; /* 设置数字文字颜色为粉色 */
+  margin: 0 30px; /* 增加左右间距 */
+  font-family: 'Digital-7', sans-serif;
+}
+
+.no-bd {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 0px; /* 增加上下行间距 */
+  padding: 10px; /* 增加内边距 */
+  background-color: rgba(245, 245, 245, 0.1);/* 设置背景颜色为深灰色，透明度为20% */
+  box-shadow: 7px 7px 17px rgba(0, 0, 0, 0.5);
+  opacity: 0.85;
+  transition: all 0.6s;
+  background-position: center top; /* 背景图位置居中顶部 */
+  background-repeat: no-repeat;
+}
+
+.no-bd li {
+  font-size: 0.8em; /* 改变汉字的字体大小 */
+  margin: 0 100px; /* 增加左右间距 */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* 中心对齐 */
+}
+
+li {
+  text-align: center;
+}
